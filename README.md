@@ -1129,6 +1129,8 @@ $ PAYLOAD="{\"username\": \"$ADMIN_USER\", \"password\": \"$ADMIN_PASS\"}"
 $ echo $PAYLOAD
 {"username": "admin", "password": "admin1234"}
 
+$ export UCP_HOST=<$UCP_HOST>
+
 $ TOKEN=$(curl --insecure  -d "$PAYLOAD" -X POST https://"$UCP_HOST"/auth/login  | jq -r ".auth_token")
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
