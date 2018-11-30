@@ -123,6 +123,10 @@ Docker Trusted Registry is a special server designed to store and manage your Do
 
 However, before we create the repositories, we do want to restrict access to them. Since we have two distinct app components, a front end Java web app, and a set of back end services, we want to restrict access to them to the team that develops them, as well as the administrators. To do that, we need to create two users and then two organizations.
 
+Docker Trusted Registry (DTR) - repos for images
+Universal Control Plane (UCP) - deploy, manage, monitor containers
+Containers - instances of images
+
 1. In the PWD web interface click the `DTR` button on the left side of the screen.
 
 	> **Note**: As with UCP before, DTR is also using self-signed certs. It's safe to click through any browser warning you might encounter.
